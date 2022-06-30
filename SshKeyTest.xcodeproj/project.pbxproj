@@ -14,6 +14,7 @@
 		5753112B286E10B00096477B /* SshKeyTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5753112A286E10B00096477B /* SshKeyTestTests.swift */; };
 		57531135286E10B00096477B /* SshKeyTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57531134286E10B00096477B /* SshKeyTestUITests.swift */; };
 		57531137286E10B00096477B /* SshKeyTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57531136286E10B00096477B /* SshKeyTestUITestsLaunchTests.swift */; };
+		5770C4DE286E18E600DDC516 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 5770C4DD286E18E600DDC516 /* Algorithms */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5770C4DE286E18E600DDC516 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +147,9 @@
 			dependencies = (
 			);
 			name = SshKeyTest;
+			packageProductDependencies = (
+				5770C4DD286E18E600DDC516 /* Algorithms */,
+			);
 			productName = SshKeyTest;
 			productReference = 57531115286E10AE0096477B /* SshKeyTest.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +222,9 @@
 				Base,
 			);
 			mainGroup = 5753110C286E10AE0096477B;
+			packageReferences = (
+				5770C4DC286E18E600DDC516 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			productRefGroup = 57531116286E10AE0096477B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -568,6 +576,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5770C4DC286E18E600DDC516 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5770C4DD286E18E600DDC516 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5770C4DC286E18E600DDC516 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5753110D286E10AE0096477B /* Project object */;
 }
